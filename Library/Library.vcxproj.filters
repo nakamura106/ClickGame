@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{a204759c-8238-41b5-b48b-a759e718d6af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Input">
+      <UniqueIdentifier>{9ee28f5b-9ad2-4674-992d-84aeb231afaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics">
+      <UniqueIdentifier>{c7b228a0-5efd-4c49-aa1a-95afc1bd3f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sound">
+      <UniqueIdentifier>{f79ead1d-5fdb-4adb-a370-2d50d1ba7dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene">
+      <UniqueIdentifier>{c0d774c2-4be8-4f79-af4d-0e9163427968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Engine">
+      <UniqueIdentifier>{25c66005-de9e-4373-b0c3-ed6cc9689d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{92ae2e95-55d3-45ad-82ad-f95854f7ec16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene\TitleScene">
+      <UniqueIdentifier>{aad53eb2-ffd3-498f-8ebf-2293feb96b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene\HelpScene">
+      <UniqueIdentifier>{47d17dda-faa0-4373-a765-3df7c96b74e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene\GameEndScene">
+      <UniqueIdentifier>{7a0fccdd-c5fb-4eeb-9129-ac39e00adcef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Scene\GameMainScene">
+      <UniqueIdentifier>{5ac83401-f5b5-416f-adab-3b9900843e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\FBX">
+      <UniqueIdentifier>{dc467e0e-7f52-4932-a8bb-9637ec1342c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Video">
+      <UniqueIdentifier>{2f16155a-f2c8-4dcb-8ce5-42c670f43bec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Input\Input.cpp">
+      <Filter>Library\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Graphics\Graphic.cpp">
+      <Filter>Library\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Engine\Engine.cpp">
+      <Filter>Library\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Engine\Camera.cpp">
+      <Filter>Library\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Sound\Sound.cpp">
+      <Filter>Library\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\LibraryManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FBX\FBX.cpp">
+      <Filter>Library\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Video\Video.cpp">
+      <Filter>Library\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\GameEndScene\GameEndScene.cpp">
+      <Filter>Library\Scene\GameEndScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\GameMainScene\GameMainScene.cpp">
+      <Filter>Library\Scene\GameMainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\HelpScene\HelpScene.cpp">
+      <Filter>Library\Scene\HelpScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Scene\TitleScene\TitleScene.cpp">
+      <Filter>Library\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\FbxManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\VideoManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\SoundManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\SceneManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Library\Input\Input.h">
+      <Filter>Library\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Graphics\Graphics.h">
+      <Filter>Library\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Engine\Engine.h">
+      <Filter>Library\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Engine\Camera.h">
+      <Filter>Library\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Sound\Sound.h">
+      <Filter>Library\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\LibraryManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\BaseScene.h">
+      <Filter>Library\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition\Definition.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\FBX\FBX.h">
+      <Filter>Library\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Video\Video.h">
+      <Filter>Library\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\GameEndScene\GameEndScene.h">
+      <Filter>Library\Scene\GameEndScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\GameMainScene\GameMainScene.h">
+      <Filter>Library\Scene\GameMainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\HelpScene\HelpScene.h">
+      <Filter>Library\Scene\HelpScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Scene\TitleScene\TitleScene.h">
+      <Filter>Library\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\FbxManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\VideoManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\SoundManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\SceneManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
