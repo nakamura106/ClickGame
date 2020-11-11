@@ -1,9 +1,3 @@
-#pragma once
-
-#include<d3dx9.h>
-#include<string>
-#include<map>
-#include"../../Library/Graphics/Graphics.h"
 #include"../../Definition/Definition.h"
 
 

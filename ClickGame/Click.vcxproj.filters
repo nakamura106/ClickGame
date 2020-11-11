@@ -61,9 +61,6 @@
     <Filter Include="Object\Enemy">
       <UniqueIdentifier>{f02c54e1-da74-4bdd-a915-640a2c0c8f59}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Object\BGetc">
-      <UniqueIdentifier>{f1ec57f0-160a-4526-9c3b-11fc11b7eb1c}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -123,11 +120,11 @@
     <ClCompile Include="Manager\ObjectManager.cpp">
       <Filter>Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Object\BGetc\BGetc.cpp">
-      <Filter>Object\BGetc</Filter>
-    </ClCompile>
     <ClCompile Include="Manager\GraphicsManager.cpp">
       <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Object.cpp">
+      <Filter>Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,11 +188,11 @@
     <ClInclude Include="Manager\ObjectManager.h">
       <Filter>Manager</Filter>
     </ClInclude>
-    <ClInclude Include="Object\BGetc\BGetc.h">
-      <Filter>Object\BGetc</Filter>
-    </ClInclude>
     <ClInclude Include="Manager\GraphicsManager.h">
       <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

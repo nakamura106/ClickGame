@@ -166,8 +166,8 @@
     <ClCompile Include="Manager\SceneManager.cpp" />
     <ClCompile Include="Manager\SoundManager.cpp" />
     <ClCompile Include="Manager\VideoManager.cpp" />
-    <ClCompile Include="Object\BGetc\BGetc.cpp" />
     <ClCompile Include="Object\Enemy\Enemy.cpp" />
+    <ClCompile Include="Object\Object.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Definition\Definition.h" />
@@ -190,8 +190,8 @@
     <ClInclude Include="Manager\SceneManager.h" />
     <ClInclude Include="Manager\SoundManager.h" />
     <ClInclude Include="Manager\VideoManager.h" />
-    <ClInclude Include="Object\BGetc\BGetc.h" />
     <ClInclude Include="Object\Enemy\Enemy.h" />
+    <ClInclude Include="Object\Object.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

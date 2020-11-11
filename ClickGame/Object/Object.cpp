@@ -1,8 +1,8 @@
-#include "BGetc.h"
+#include "Object.h"
 
 Object::Object()
 {
-	bgetc_info.pos["BG"] = D3DXVECTOR2(0,0);
+	bgetc_info.pos["BG"] = D3DXVECTOR2(0, 0);
 }
 
 Object::~Object()
