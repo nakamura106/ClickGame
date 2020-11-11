@@ -52,6 +52,18 @@
     <Filter Include="Library\Video">
       <UniqueIdentifier>{2f16155a-f2c8-4dcb-8ce5-42c670f43bec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{6782aaf9-9f7d-4d3b-b6e8-c1615fc25d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Player">
+      <UniqueIdentifier>{ad41f957-d85f-468f-97e8-ecaa86b61c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Enemy">
+      <UniqueIdentifier>{f02c54e1-da74-4bdd-a915-640a2c0c8f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\BGetc">
+      <UniqueIdentifier>{f1ec57f0-160a-4526-9c3b-11fc11b7eb1c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -104,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="Manager\SceneManager.cpp">
       <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Enemy\Enemy.cpp">
+      <Filter>Object\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +175,9 @@
     </ClInclude>
     <ClInclude Include="Manager\SceneManager.h">
       <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Enemy\Enemy.h">
+      <Filter>Object\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

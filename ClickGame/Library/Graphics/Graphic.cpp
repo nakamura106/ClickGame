@@ -220,7 +220,8 @@ void Graphics::DrawEnd()
 
 
 // テクスチャーの読み込み
-bool Graphics::LoadTexture(const char* file_name_, TEXTURE_DATA* texture_)
+bool Graphics::LoadTexture
+(const char* file_name_, TEXTURE_DATA* texture_)
 {
 	D3DXIMAGE_INFO info;
 
@@ -278,76 +279,6 @@ void Graphics::DrawTexture(TEXTURE_DATA* texture_, D3DXVECTOR2 pos_)
 	device_->SetTexture(0, texture_->texture);
 
 	device_->DrawPrimitiveUP(D3DPT_TRIANGLEFAN, 2, bg, sizeof(CUSTOM_VERTEX));
-}
-
-//UV用
-void Graphics::DrawUVTexture(TEXTURE_DATA * texture_, D3DXVECTOR3 pos_, float sprite_width_, float sprite_height_, float tu_, float tv_, float Ttu_, float Ttv_, D3DXVECTOR3 angle_, D3DXVECTOR3 scale_)
-{
-
-	float harf_x = sprite_width_ / 2.0f;
-	float harf_y = sprite_height_ / 2.0f;
-
-	/*float Ttu_ = sprite_width_ / texture_->width;
-	float Ttv_ = sprite_height_ / texture_->height;*/
-
-	CUSTOM_VERTEX effect[4] =
-	{
-		{ -harf_x, harf_y, 0.0f,tu_, tv_ },
-		{ harf_x, harf_y, 0.0f,tu_ + Ttu_, tv_ },
-		{ harf_x, -harf_y, 0.0f, tu_ + Ttu_, tv_ + Ttv_ },
-		{ -harf_x, -harf_y, 0.0f, tu_, tv_ + Ttv_ },
-	};
-
-	D3DXMATRIX mat_world, mat_trans, mat_scale, mat_rot, mat_rot_x, mat_rot_y, mat_rot_z;
-	D3DXMatrixIdentity(&mat_world);
-	//D3DXMatrixIdentity(&mat_trans);
-
-	// 移動
-	D3DXMatrixTranslation(&mat_trans, pos_.x, pos_.y, pos_.z);
-
-	D3DXMatrixScaling(&mat_scale, scale_.x, scale_.y, scale_.z);
-
-	D3DXMatrixRotationX(&mat_rot_x, D3DXToRadian(angle_.x));
-	D3DXMatrixRotationY(&mat_rot_y, D3DXToRadian(angle_.y));
-	D3DXMatrixRotationZ(&mat_rot_z, D3DXToRadian(angle_.z));
-
-	mat_rot = mat_rot_x * mat_rot_y * mat_rot_z;
-
-	mat_world = mat_scale * mat_rot * mat_trans;
-
-	GetD3DDevice()->SetTransform(D3DTS_WORLD, &mat_world);
-
-	GetD3DDevice()->SetRenderState(D3DRS_LIGHTING, FALSE);
-	// 頂点構造の指定
-	device_->SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
-
-	device_->SetTexture(0, texture_->texture);
-
-	device_->DrawPrimitiveUP(D3DPT_TRIANGLEFAN, 2, effect, sizeof(CUSTOM_VERTEX));
-
-}
-
-//UV用
-void Graphics::DrawUIUVTexture(TEXTURE_DATA * texture_, D3DXVECTOR2 pos_, float sprite_width_, float sprite_height_, float tu_, float tv_)
-{
-	float Ttu = sprite_width_ / texture_->width;
-	float Ttv = sprite_height_ / texture_->height;
-
-	CUSTOM_VERTEX effect[4] =
-	{
-		{ pos_.x, pos_.y, 0.0f, 1.0f, tu_, tv_ },
-		{ pos_.x + sprite_width_, pos_.y, 0.0f, 1.0f, tu_ + Ttu , tv_ },
-		{ pos_.x + sprite_width_, pos_.y + sprite_height_, 0.0f, 1.0f, tu_ + Ttu, tv_ + Ttv},
-		{ pos_.x, pos_.y + sprite_height_, 0.0f, 1.0f, tu_, tv_ + Ttv },
-	};
-
-	// 頂点構造の指定
-	device_->SetFVF(D3DFVF_XYZRHW | D3DFVF_TEX1);
-
-	device_->SetTexture(0, texture_->texture);
-
-	device_->DrawPrimitiveUP(D3DPT_TRIANGLEFAN, 2, effect, sizeof(CUSTOM_VERTEX));
-
 }
 
 // テクスチャーの解放

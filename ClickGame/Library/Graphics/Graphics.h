@@ -112,10 +112,6 @@ public:
 	void DrawStart();
 
 	void DrawEnd();
-	
-	void DrawUVTexture(TEXTURE_DATA* texture_, D3DXVECTOR3 pos_, float sprite_width_, float sprite_height_, float tu_, float tv_, float Ttu_, float Ttv_, D3DXVECTOR3 angle_, D3DXVECTOR3 scale_);
-
-	void DrawUIUVTexture(TEXTURE_DATA* texture_, D3DXVECTOR2 pos_, float sprite_width_, float sprite_height_, float tu_, float tv_);
 
 	bool LoadTexture(const char* file_name_, TEXTURE_DATA* texture_);
 
@@ -141,6 +137,7 @@ public:
 		
 
 	private:
+
 		LPDIRECT3D9 interface_;
 		LPDIRECT3DDEVICE9 device_;
 		LPD3DXFONT fontlist_[FontSize::FONTSIZE_MAX];

@@ -85,7 +85,7 @@ SceneManager::SceneManager()
 	Scene_Instance.main = new GameMainScene;
 	Scene_Instance.end = new GameEndScene;
 
-	Scene_Info.CurrentSceneID = SceneId::Title;
+	Scene_Info.CurrentSceneID = SceneId::Game;
 	Scene_Info.CurrentSceneStep = SceneStep::Init;
 }
 

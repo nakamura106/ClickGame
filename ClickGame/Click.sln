@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "Library.vcxproj", "{5C3446FB-F53F-4E89-8AC2-94888C8E427C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "Click.vcxproj", "{5C3446FB-F53F-4E89-8AC2-94888C8E427C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B61C3502-0177-4ADB-9410-6D2677CE9241}
+		SolutionGuid = {FEC6385B-59A3-476D-BDEC-46B3A47E25B0}
 	EndGlobalSection
 EndGlobal

@@ -23,7 +23,7 @@
     <ProjectGuid>{5C3446FB-F53F-4E89-8AC2-94888C8E427C}</ProjectGuid>
     <RootNamespace>Quarto</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Library</ProjectName>
+    <ProjectName>Click</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -164,6 +164,7 @@
     <ClCompile Include="Manager\SceneManager.cpp" />
     <ClCompile Include="Manager\SoundManager.cpp" />
     <ClCompile Include="Manager\VideoManager.cpp" />
+    <ClCompile Include="Object\Enemy\Enemy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Definition\Definition.h" />
@@ -184,6 +185,7 @@
     <ClInclude Include="Manager\SceneManager.h" />
     <ClInclude Include="Manager\SoundManager.h" />
     <ClInclude Include="Manager\VideoManager.h" />
+    <ClInclude Include="Object\Enemy\Enemy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
