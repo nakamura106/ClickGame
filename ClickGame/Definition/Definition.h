@@ -18,4 +18,7 @@
 #define ENEMY_GENERATE_RANGE_X 1800
 #define ENEMY_GENERATE_RANGE_Y 1000
 
+#define BG_POS_X 0
+#define BG_POS_Y 0
+
 #endif // !Difinition_H_

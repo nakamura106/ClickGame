@@ -1,6 +1,5 @@
 #include"../../Definition/Definition.h"
 
-
 class Object
 {
 public:
@@ -12,9 +11,11 @@ public:
 	void Draw();
 
 private:
-	struct BGetcInfo
+	struct ObjectInfo
 	{
-		std::map<std::string, D3DXVECTOR2> pos;
-		std::map<std::string, Graphics::TEXTURE_DATA*> tex;
-	}bgetc_info;
+		D3DXVECTOR2 pos;
+		Graphics::TEXTURE_DATA* tex;
+	};
+
+	std::map <std::string, ObjectInfo*>obj_info;
 };
