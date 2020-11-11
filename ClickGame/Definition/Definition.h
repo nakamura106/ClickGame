@@ -14,4 +14,8 @@
 #define THE_SOUND SoundManager::Instance()
 #define THE_CAMERA LibraryManager::Instance()->GetCamera()
 #define THE_VIDEO LibraryManager::Instance()->GetVideo()
+
+#define ENEMY_GENERATE_RANGE_X 1800
+#define ENEMY_GENERATE_RANGE_Y 1000
+
 #endif // !Difinition_H_

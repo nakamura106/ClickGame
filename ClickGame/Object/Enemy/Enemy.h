@@ -15,12 +15,9 @@ public:
 	void Draw();
 
 private:
-
 	struct EnemyInfo
 	{
 		D3DXVECTOR2 pos;
 		Graphics::TEXTURE_DATA* tex;
-	}enemyinfo;
-	
-
+	}enemy_info;
 };
